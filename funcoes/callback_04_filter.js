@@ -15,3 +15,18 @@ const nomeItemsValidos = carrinho
 console.log(nomeItemsValidos)
 
 // no fim, após filtrar os items com qtde maior que 0, o map exibe os nomes desses items.
+
+Array.prototype.meuFilter = function(fn) {
+    const novoArray = []
+
+    for(let i = 0; i < this.length; i++) {
+        if(fn(this[i], i, this)) {
+    }
+}
+    return novoArray
+}
+
+const nomeItemsValidos2 = carrinho
+.meuFilter(qdteMaiorQueZero)
+.map(getNome)
+console.log(nomeItemsValidos2)

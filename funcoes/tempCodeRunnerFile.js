@@ -1,1 +1,1 @@
-console.log('Teste')
+p.then(letra => console.log(letra[0]))
